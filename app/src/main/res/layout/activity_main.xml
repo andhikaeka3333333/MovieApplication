@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2B2B2C">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#2B2B2C">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:id="@+id/profil"
+            android:src="@drawable/profil"
+            android:onClick="showFullScreenProfile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Apps"
+            android:textSize="35dp"
+            android:id="@+id/logo"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/profil"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+/>
+
+
+
+        <SearchView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/searchView"
+            android:layout_below="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:iconifiedByDefault="false"
+            android:queryHint="Cari film..."
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_search"
+            android:theme="@style/ThemeOverlay.SearchView"
+            android:layout_marginTop="10dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            android:layout_below="@+id/searchView"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#272424">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPage6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>

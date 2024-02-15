@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tool s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434547"
+    tools:context=".ActivityLogin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:id="@+id/login"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/logo"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/login"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Masukkan email"
+            android:layout_below="@+id/logo"
+            android:textColor="@color/black"
+            android:textColorHint="#2E3739"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textEmailAddress"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputUsername"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#2E3739"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonlogin"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#2A3033"
+            android:textColor="#FDFDFD"
+            android:text="Login"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/newacount"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#448AFF"
+            android:text="Create New Account"
+            android:background="@drawable/button_dua"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="©2024 Andhika Eka"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newacount"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
